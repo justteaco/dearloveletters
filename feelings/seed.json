@@ -1,0 +1,100 @@
+[
+{
+  "model": "feelings.feeling",
+  "pk": 1,
+  "fields": {
+    "emotion": "Happy"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 2,
+  "fields": {
+    "emotion": "Anger"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 3,
+  "fields": {
+    "emotion": "Fear"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 4,
+  "fields": {
+    "emotion": "Disgust"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 5,
+  "fields": {
+    "emotion": "Happiness"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 6,
+  "fields": {
+    "emotion": "Sadness"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 7,
+  "fields": {
+    "emotion": "Surprise"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 8,
+  "fields": {
+    "emotion": "Contempt"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 9,
+  "fields": {
+    "emotion": "Joy"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 10,
+  "fields": {
+    "emotion": "Excitement"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 11,
+  "fields": {
+    "emotion": "Surprise"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 12,
+  "fields": {
+    "emotion": "Sadness"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 13,
+  "fields": {
+    "emotion": "Anger"
+  }
+},
+{
+  "model": "feelings.feeling",
+  "pk": 14,
+  "fields": {
+    "emotion": "Loved"
+  }
+}
+]
