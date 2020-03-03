@@ -12,8 +12,8 @@ class LoveLetter(models.Model):
   love_letter = models.CharField(max_length=800)
   feelings = models.ManyToManyField('feelings.Feeling', related_name='loveletters', blank=True)
   published = models.DateTimeField(default=timezone.now)
-  recipient = models.ForeignKey(User, related_name='love_letter', null=True, on_delete=models.CASCADE)
-  owner = models.ForeignKey(User, related_name='love_letter+', null=True, on_delete=models.CASCADE)
+  # recipient = models.ForeignKey(User, related_name='love_letter', null=True, on_delete=models.CASCADE)
+  owner = models.ForeignKey(User, related_name='love_letter', null=True, on_delete=models.CASCADE)
 
   def __str__(self):
         return self.title

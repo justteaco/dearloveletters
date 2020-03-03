@@ -26,5 +26,4 @@ class TeablendSerializer(serializers.ModelSerializer):
 
 
 class PopulatedFeelingSerializer(FeelingSerializer):
-    owner = UserSerializer()
     teablends = TeablendSerializer(many=True)

@@ -9,6 +9,6 @@ class TeablendSerializer(serializers.ModelSerializer):
         model = Teablend
         fields = ('id', 'herb_name', 'herb_property', 'feelings')
 
-class PopulatedTeablendsSerializer(TeablendSerializer):
+class PopulatedTeablendSerializer(TeablendSerializer):
     feelings = FeelingSerializer(many=True)
   

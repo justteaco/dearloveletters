@@ -21,10 +21,10 @@ class FeelingDetailView(APIView):
         try:
             feeling = Feeling.objects.get(pk=pk)
             serialized_feeling = PopulatedFeelingSerializer(feeling)
-            print(serialized_feeling)
+            print(serialized_feeling.data)
             return Response(serialized_feeling.data)
         except Feeling.DoesNotExist:
-            print(serialized_feeling)
+            # print(serialized_feeling)
             return  Response({'message': 'Not Found'}, status=HTTP_404_NOT_FOUND)
 
     def put(self, request, pk):

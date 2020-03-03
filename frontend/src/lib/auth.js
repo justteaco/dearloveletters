@@ -1,4 +1,4 @@
-// Not a React component, so first character in auth is lowercase
+
 class Auth {
   static setToken(token) {
     localStorage.setItem('token', token)
