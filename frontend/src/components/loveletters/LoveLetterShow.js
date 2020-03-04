@@ -5,7 +5,11 @@ import Auth from '../../lib/auth'
 //import UserResponse from '../../src/components/users/'
 class LoveLetterShow extends React.Component {
   state = {
-    loveletter: null
+    loveletter: null,
+    feelings: null,
+    // comments: '',
+    likes: []
+
   }
 
   async componentDidMount() {
@@ -15,7 +19,7 @@ class LoveLetterShow extends React.Component {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.setState({ loveletter: res.data })
-      console.log(res.data)
+      // console.log(res.data)
     } catch (err) {
       console.log(err)
     }
@@ -24,21 +28,20 @@ class LoveLetterShow extends React.Component {
   handleDelete = async () => {
     const loveletterId = this.props.match.params.id
     try {
-      await axios.delete(`/loveletter/${loveletterId}`, {
+      await axios.delete(`/loveletters/${loveletterId}`, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.props.history.push('/loveletters')
     } catch (err) {
-      this.props.history.push('/notfound')
+      // this.props.history.push('/notfound')
     }
   }
 
-
-
-  // isOwner = () => Auth.getPayload().sub === this.state.loveletter.owner.id
+  //isOwner = () => Auth.getPayload().sub === this.state.loveletter.owner.id
 
   render() {
     if (!this.state.loveletter) return null
+    console.log(this.state.loveletter)
     const { loveletter } = this.state
     return (
       <section className="section">
@@ -52,18 +55,18 @@ class LoveLetterShow extends React.Component {
               </figure>
             </div>
             <div className="column is-half">
-              <h4 className="title is-4">Letter</h4>
-              <p>{loveletter.content}</p>
+              <h4 className="title is-4">Dear Love, </h4>
+              <p>{loveletter.love_letter}</p>
               <hr />
-              <h4 className="title is-4">location</h4>
-              <p>{loveletter.location}</p>
-              <hr />
+              <h4 className="title is-4">how i feel:</h4>
+              <p>{loveletter.feelings}</p>
+
+
               {/* {this.isOwner() && */}
               <>
                 <Link to={`/loveletters/${loveletter._id}/edit`} className="button is-warning">
-                  Edit Love Letter
+                  edit letter
                   </Link>
-                <button onClick={this.handleDelete} className="button is-danger">No Love Found </button>
               </>
               {/* } */}
             </div>
@@ -75,3 +78,5 @@ class LoveLetterShow extends React.Component {
 }
 
 export default LoveLetterShow
+
+

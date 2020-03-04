@@ -7,31 +7,15 @@ import axios from 'axios'
 class Register extends React.Component {
   state = {
     data: {
-      name: '',
+      username: '',
       email: '',
       password: '',
-      passwordConfirmation: '',
-      loveletters: '',
-      city: '',
-      profile_image: ''
+      password_confirmation: '',
+      location_city: ''
+
     },
     errors: {}
   }
-
-  options = [
-    { value: 'Happy', label: 'Happy' },
-    { value: 'Sad', label: 'Sad' },
-    { value: 'Angry', label: 'Angry' },
-    { value: 'Confused', label: 'Confused' },
-    { value: 'Beautiful', label: 'Beautiful' },
-    { value: 'Joyful', label: 'Joyful' },
-    { value: 'Present', label: 'Present' },
-    { value: 'Distracted', label: 'Distracted' },
-    { value: 'Embarrassed', label: 'EMabarrased' },
-    { value: 'Sexy', label: 'Sexy' },
-    { value: 'Distant', label: 'Distant' },
-    { value: 'Lonley', label: 'Lonely' },
-  ]
 
   handleChange = e => {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
@@ -40,8 +24,8 @@ class Register extends React.Component {
   }
 
   handleMultiChange = (selected) => {
-    const loveletters = selected ? selected.map(item => item.value) : []
-    const data = { ...this.state.data, loveletters }
+    // const loveletters = selected ? selected.map(item => item.value) : []
+    const data = { ...this.state.data }
     this.setState({ data })
   }
 
@@ -58,64 +42,76 @@ class Register extends React.Component {
 
   render() {
     return (
-      <section className="section cheese-image">
+      <section className="section">
         <div className="container">
           <div className="columns">
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter card">
-              <h2 className="title">Register</h2>
+              <h2 className="title">register</h2>
               <div className="field">
-                <label className="label">Username</label>
+                <label className="label">ysername</label>
                 <div className="control">
                   <input
-                    className={`input ${this.state.errors.username} ? : 'is-danger' : '' `}
-                    name="username"
+                    className='input'
                     placeholder="Username"
+                    name="username"
                     onChange={this.handleChange}
                   />
                 </div>
-                {this.state.errors.username && <small className="help is-danger">{this.state.errors.username}</small>}
+
               </div>
               <div className="field">
-                <label className="label">Email</label>
+                <label className="label">email</label>
                 <div className="control">
                   <input
-                    className={`input ${this.state.errors.email} ? : 'is-danger' : '' `}
+                    className='input'
+                    placeholder="email"
                     name="email"
-                    placeholder="Email"
                     onChange={this.handleChange}
                   />
                 </div>
-                {this.state.errors.email && <small className="help is-danger">{this.state.errors.email}</small>}
-              </div>
-              <div className="field">
-                <label className="label">Password</label>
-                <div className="control">
-                  <input
-                    className={`input ${this.state.errors.password} ? : 'is-danger' : '' `}
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                    onChange={this.handleChange}
-                  />
+
+                <div className="field">
+                  <label className="label">location</label>
+                  <div className="control">
+                    <input
+                      className='input'
+                      placeholder="location"
+                      name="location_city"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+
                 </div>
-                {this.state.errors.password && <small className="help is-danger">{this.state.errors.password}</small>}
-              </div>
-              <div className="field">
-                <label className="label">Password Confirmation</label>
-                <div className="control">
-                  <input
-                    className={`input ${this.state.errors.passwordConfirmation} ? : 'is-danger' : '' `}
-                    name="passwordConfirmation"
-                    type="password"
-                    placeholder="Password Confirmation"
-                    onChange={this.handleChange}
-                  />
+                <div className="field">
+                  <label className="label">password</label>
+                  <div className="control">
+                    <input
+                      className='input'
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+
+
                 </div>
-                {this.state.errors.passwordConfirmation && <small className="help is-danger">{this.state.errors.passwordConfirmation}</small>}
-              </div>
-              <div className="field">
-                <div className="control">
-                  <button type="submit" className="button is-warning is-fullwidth">Register</button>
+                <div className="field">
+                  <label className="label">password confirmation</label>
+                  <div className="control">
+                    <input
+                      className='input'
+                      name="password_confirmation"
+                      type="password"
+                      placeholder="Password Confirmation"
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <div className="control">
+                    <button type="submit" className="button is-warning is-fullwidth">register</button>
+                  </div>
                 </div>
               </div>
             </form>

@@ -1,56 +1,41 @@
 import React from 'react'
 
-const LoveLetterForm = ({ data, handleChange, handleSubmit, errors }) => (
+const LoveLetterForm = ({ data, handleChange, handleSubmit }) => (
   <div className="columns">
     <form onSubmit={handleSubmit} className="column is-half is-offset-one-quarter card">
       <div className="field">
         <label className="label">title</label>
         <div className="control">
           <input
-            className={`input ${errors.name ? 'is-danger' : ''}`}
-            placeholder="Name"
-            name="name"
+            className='input'
+            placeholder="title"
+            name="title"
             onChange={handleChange}
-            value={data.name}
+            value={data ? data.title : ''}
           />
         </div>
-        {errors.name && <small className="help is-danger">{errors.name}</small>}
-      </div>
-      <div className="field">
-        <label className="label">feeling</label>
-        <div className="control">
-          <input
-            className={`input ${errors.origin ? 'is-danger' : ''}`}
-            placeholder="Origin"
-            name="origin"
-            onChange={handleChange}
-            value={data.origin}
-          />
-        </div>
-        {errors.origin && <small className="help is-danger">{errors.origin}</small>}
       </div>
       <div className="field">
         <label className="label">Image</label>
         <div className="control">
           <input
-            className={`input ${errors.image ? 'is-danger' : ''}`}
+            className='input'
             placeholder="Image"
             name="image"
             onChange={handleChange}
-            value={data.image}
+            value={data ? data.image : ''}
           />
         </div>
-        {errors.image && <small className="help is-danger">{errors.image}</small>}
       </div>
       <div className="field">
-        <label className="label">content</label>
+        <label className="label">Love Letter</label>
         <div className="control">
           <textarea
             className="textarea"
-            placeholder="Tasting Notes"
-            name="tastingNotes"
+            placeholder="how do you feel?"
+            name="love_letter"
             onChange={handleChange}
-            value={data.tastingNotes}
+            value={data ? data.love_letter : ''}
           />
         </div>
       </div>

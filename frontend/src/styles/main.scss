@@ -1,13 +1,45 @@
+//home page
+
 html {
+  scroll-behavior: smooth;
+  background-color: rgb(214, 174, 187); 
+}
+body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: rgb(214, 174, 187); 
+}
+#home-page {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-body {
+  height: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.dear-love-title
+{
+  color: pink;
+  font-size: 100px;
+}
+.hows-your-heart {
+  color: pink;
+  font-size: 150px; 
+  
+  }
+
+
+.about-loveletters {
+  font-size: 24px; 
+.about-letters{
+  color: green;
+}
 }
 
-body {
-  background-image: url('https://payload.cargocollective.com/1/8/273621/11368201/jck_chronos.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  opacity: 1;
+.button{
+  color: pink;
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import ImageUpload from '../ImageUpload'
-import Select from 'react-select'
+//import ImageUpload from '../ImageUpload'
+//import Select from 'react-select'
 
-const UserForm = ({ data, options, handleMultiChange, handleChange, handleDelete, handleSubmit, errors }) => {
+const UserForm = ({ data, handleChange, handleDelete, handleSubmit, errors }) => {
 
-  const prePopulateArray = data.loveletter.map(loveletter => {
-    return { value: loveletter, label: loveletter }
-  })
+  // const prePopulateArray = data.skills.map(skill => {
+  //   return { value: skill, label: skill }
+  // })
 
   return (
     <section className="user-section">
@@ -14,18 +14,63 @@ const UserForm = ({ data, options, handleMultiChange, handleChange, handleDelete
         <div className="user-info">
           <h2 className="title">edit profile</h2>
           <div className="field">
-            <label className="label">name</label>
             <label className="label">username</label>
             <div className="control">
               <input
                 className={`input is-rounded ${errors.name ? 'is-danger' : ''}`}
-                placeholder="Name"
-                name="name"
+                placeholder="Username"
+                name="username"
                 onChange={handleChange}
-                value={data.name}
+                value={data.username}
               />
             </div>
-            {errors.name && <small className="help is-danger">{errors.name}</small>}
+          </div>
+          <div className="field">
+            <label className="label">first name</label>
+            <div className="control">
+              <input
+                className={`input is-rounded ${errors.password ? 'is-danger' : ''}`}
+                type="first_name"
+                placeholder="first name"
+                name="first_name"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label">last name</label>
+            <div className="control">
+              <input
+                className={`input is-rounded ${errors.password ? 'is-danger' : ''}`}
+                type="last_name"
+                placeholder="last name"
+                name="last_name"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label">city</label>
+            <div className="control">
+              <input
+                placeholder="City"
+                name="location_city"
+                value={data.location_city}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="field">
+            <label className="label">about me</label>
+            <div className="control">
+              <input
+                className={`input is-rounded ${errors.password ? 'is-danger' : ''}`}
+                type="about_me"
+                placeholder="about me"
+                name="about_me"
+                onChange={handleChange}
+              />
+            </div>
           </div>
           <div className="field">
             <label className="label">email</label>
@@ -38,7 +83,6 @@ const UserForm = ({ data, options, handleMultiChange, handleChange, handleDelete
                 value={data.email}
               />
             </div>
-            {errors.email && <small className="help is-danger">{errors.email}</small>}
           </div>
           <div className="field">
             <label className="label">password</label>
@@ -51,23 +95,19 @@ const UserForm = ({ data, options, handleMultiChange, handleChange, handleDelete
                 onChange={handleChange}
               />
             </div>
-            {errors.password && <small className="help is-danger">{errors.password}</small>}
           </div>
           <div className="field">
-            <label className="label">confirm passowrd</label>
+            <label className="label">password confirmation</label>
             <div className="control">
-              <input3
+              <input
                 className={`input is-rounded ${errors.passwordConfirmation ? 'is-danger' : ''}`}
                 type="password"
-                placeholder="Password Confirmation"
-                name="passwordConfirmation"
+                placeholder="password confirmation"
+                name="password_confirmation"
                 onChange={handleChange}
               />
             </div>
-            {errors.passwordConfirmation && <small className="help is-danger">{errors.passwordConfirmation}</small>}
-          </div>
-        </div>
-        <div className="user-image">
+            {/* <div className="user-image">
           {
             data.image ?
               <ImageUpload
@@ -75,7 +115,7 @@ const UserForm = ({ data, options, handleMultiChange, handleChange, handleDelete
                 fieldName="image"
                 inputClassName="my-input-class"
               >
-                <button onClick={ImageUpload} className="button is-danger">upload</button>
+                <button onClick={ImageUpload} className="button is-danger">Image Upload</button>
               </ImageUpload>
               :
               <ImageUpload
@@ -85,37 +125,15 @@ const UserForm = ({ data, options, handleMultiChange, handleChange, handleDelete
               >
                 <button onClick={ImageUpload} className="button is-danger">Image Upload</button>
               </ImageUpload>
-          }
-          <button type="submit" className="button  is-rounded is-primary">SAVE</button>
-          <br />
-          <button onClick={handleDelete} className="button is-danger">Delete Profile</button>
-        </div>
-        <div className="feelings">
-          <div className="fieldContainer">
-            <label className="label">Update Love Letter</label>
-            <div className="control">
-              <Select
-                options={options}
-                isMulti
-                defaultValue={prePopulateArray}
-                onChange={handleMultiChange}
-              />
-            </div>
-            <div className="field">
-              <label className="label">CITY</label>
-              <div className="control">
-                <input
-                  className={`input is-rounded ${errors.city ? 'is-danger' : ''}`}
-                  placeholder="City"
-                  name="city"
-                  value={data.city}
-                  onChange={handleChange}
-                />
-              </div>
-              {errors.city && <small className="help is-danger">{errors.city}</small>}
-            </div>
+          } */}
           </div>
         </div>
+
+        <button type="submit" className="button  is-rounded is-primary">save</button>
+        <br />
+        <button onClick={handleDelete} className="button is-danger"> delete profile </button>
+        {/* </div> */}
+        <hr />
       </form>
     </section>
   )

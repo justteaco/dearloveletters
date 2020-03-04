@@ -3,28 +3,26 @@
   "model": "loveletters.loveletter",
   "pk": 1,
   "fields": {
-    "title": "Here's To March",
-    "penpal_name": "It's Eve",
-    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEhAVFRUVFRUVEBUVFRUWFRUWFRYWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQFy0lHyUvLS0tKy0tLS0tLSstLS0tLS0tLS0tLS0tLSsvL",
-    "love_letter": "I'm so happy i put some time aside to write you. I feel like it's been forever since I've updated you on things. It's almost a whole March out here, we made it praise God. So much has been happening and the truth is, I'm tired. BUT it's what I prayed for and God been working. Remember the Vision Board Party i wanted to do for HNOW? Freaked it. Im really happy about that, thank you for your encouraging words. Now i'm just trying to work on managing my time. The nerve of me to think I'd be able to \"lay low\" before the summer. Chile, this city dead never sleeps but praise God for opportunity and ability. ANYWAYS what about YOU? I'm so excited to hear about how 2020 has been for you. I know you're out there killing it! You have to update me on that thing* (wink, wink). I miss you, but cest la",
-    "feelings": [
-      1,
-      9,
-      10
-    ]
+    "title": "Test",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/513ZBn9L-JL._SX258_BO1,204,203,200_.jpg",
+    "love_letter": "love is blind and it'll take over your mind",
+    "published": "2020-03-03T11:05:36Z",
+    "recipient": 1,
+    "owner": 1,
+    "feelings": []
   }
 },
 {
   "model": "loveletters.loveletter",
   "pk": 2,
   "fields": {
-    "title": "Women Who Run With Wolves",
-    "penpal_name": "yourfavoritecup",
-    "image": "https://images.squarespace-cdn.com/content/v1/5462b6dde4b0719cb5b8a1a0/1513464120777-UIGKQQ8IMYBVS53I9W6U/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yi",
-    "love_letter": "i dreamnt about my ex's girlfriend and now we're friends",
-    "feelings": [
-      7
-    ]
+    "title": "I've been having a shit day",
+    "image": "https://pbs.twimg.com/profile_images/785547911878717441/r8AyE_Kh_400x400.jpg",
+    "love_letter": "i went behinds my girls back and now im sad",
+    "published": "2020-02-27T16:00:10.929Z",
+    "recipient": null,
+    "owner": null,
+    "feelings": []
   }
 },
 {
@@ -32,11 +30,13 @@
   "pk": 3,
   "fields": {
     "title": "I've been having a shit day",
-    "penpal_name": "hailepatric",
     "image": "https://pbs.twimg.com/profile_images/785547911878717441/r8AyE_Kh_400x400.jpg",
     "love_letter": "i went behinds my girls back and now im sad",
+    "published": "2020-02-27T16:00:10.929Z",
+    "recipient": null,
+    "owner": null,
     "feelings": [
-      2
+      1
     ]
   }
 },
@@ -44,49 +44,29 @@
   "model": "loveletters.loveletter",
   "pk": 4,
   "fields": {
-    "title": "I love my life",
-    "penpal_name": "yourfavoritecup",
-    "image": "https://images.squarespace-cdn.com/content/v1/55931f4ee4b036bdbac13045/1503934110979-A7KOV5Y0M8UR9GJQID0U/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yi",
-    "love_letter": "love is blind and it'll take over your mind",
+    "title": "My Love overflows, my heart is full",
+    "image": "https://media2.giphy.com/media/czevJlexlxAyc/giphy.gif",
+    "love_letter": "'m so happy i put some time aside to write you. I feel like it's been forever since I've updated you on things. It's almost a whole March out here, we made it praise God. So much has been happening and the truth is, I'm tired. BUT it's what I prayed for and God been working. Remember the Vision Board Party i wanted to do for HNOW? Freaked it. Im really happy about that, thank you for your encouraging words. Now i'm just trying to work on managing my time. The nerve of me to think I'd be able to \"lay low\" before the summer. Chile, this city dead never sleeps but praise God for opportunity and ability. ANYWAYS what about YOU? I'm so excited to hear about how 2020 has been for you. I know you're out there killing it! You have to update me on that thing* (wink, wink). I miss you, but cest la v",
+    "published": "2020-03-03T11:51:53Z",
+    "recipient": 1,
+    "owner": 2,
     "feelings": [
-      1
+      2,
+      4
     ]
   }
 },
 {
-  "model": "loveletters.comment",
-  "pk": 1,
+  "model": "loveletters.loveletter",
+  "pk": 5,
   "fields": {
-    "text": "Hey Love, I think it's super commendable of you to THIS IS JUST A BUNCH OF BULL LAHAHAH",
-    "loveletter": 1,
-    "owner": 1
-  }
-},
-{
-  "model": "loveletters.comment",
-  "pk": 2,
-  "fields": {
-    "text": "WELL THATS YOUR FUCKING FAULT LOSER",
-    "loveletter": 3,
-    "owner": 1
-  }
-},
-{
-  "model": "loveletters.comment",
-  "pk": 3,
-  "fields": {
-    "text": "my first comment",
-    "loveletter": 2,
-    "owner": 1
-  }
-},
-{
-  "model": "loveletters.comment",
-  "pk": 4,
-  "fields": {
-    "text": "thats beautiful",
-    "loveletter": 4,
-    "owner": 1
+    "title": "Money Flows",
+    "image": "https://media2.giphy.com/media/JpG2A9P3dPHXaTYrwu/giphy.gif",
+    "love_letter": "I've been having so much trouble keeping a job and finally have one that I enjoy and",
+    "published": "2020-03-03T11:54:54Z",
+    "recipient": 1,
+    "owner": 1,
+    "feelings": []
   }
 }
 ]

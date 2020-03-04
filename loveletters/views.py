@@ -18,7 +18,6 @@ class LoveLetterListView(APIView):
         return Response(serialized_loveletters.data, status=HTTP_200_OK)
 
     def post(self, request):
-
         loveletter = LoveLetterSerializer(data=request.data)
 
         if loveletter.is_valid():

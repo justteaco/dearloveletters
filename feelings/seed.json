@@ -3,98 +3,90 @@
   "model": "feelings.feeling",
   "pk": 1,
   "fields": {
-    "emotion": "Happy"
+    "emotion": "Relax",
+    "teablends": [
+      1
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 2,
   "fields": {
-    "emotion": "Anger"
+    "emotion": "Happy",
+    "teablends": [
+      1
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 3,
   "fields": {
-    "emotion": "Fear"
+    "emotion": "Sad",
+    "teablends": [
+      3
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 4,
   "fields": {
-    "emotion": "Disgust"
+    "emotion": "Loved",
+    "teablends": [
+      11
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 5,
   "fields": {
-    "emotion": "Happiness"
+    "emotion": "Confused",
+    "teablends": [
+      9
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 6,
   "fields": {
-    "emotion": "Sadness"
+    "emotion": "Sick",
+    "teablends": [
+      5
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 7,
   "fields": {
-    "emotion": "Surprise"
+    "emotion": "Depressed",
+    "teablends": [
+      8
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 8,
   "fields": {
-    "emotion": "Contempt"
+    "emotion": "Energetic",
+    "teablends": [
+      3
+    ]
   }
 },
 {
   "model": "feelings.feeling",
   "pk": 9,
   "fields": {
-    "emotion": "Joy"
-  }
-},
-{
-  "model": "feelings.feeling",
-  "pk": 10,
-  "fields": {
-    "emotion": "Excitement"
-  }
-},
-{
-  "model": "feelings.feeling",
-  "pk": 11,
-  "fields": {
-    "emotion": "Surprise"
-  }
-},
-{
-  "model": "feelings.feeling",
-  "pk": 12,
-  "fields": {
-    "emotion": "Sadness"
-  }
-},
-{
-  "model": "feelings.feeling",
-  "pk": 13,
-  "fields": {
-    "emotion": "Anger"
-  }
-},
-{
-  "model": "feelings.feeling",
-  "pk": 14,
-  "fields": {
-    "emotion": "Loved"
+    "emotion": "Lazy",
+    "teablends": [
+      7
+    ]
   }
 }
 ]

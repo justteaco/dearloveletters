@@ -40,7 +40,6 @@ class LikeSerializer(serializers.ModelSerializer):
 
 
 class PopulatedLoveLettersSerializer(LoveLetterSerializer):
-  feelings = FeelingSerializer(many=True)
   comments = PopulatedCommentSerializer(many=True)
   likes = LikeSerializer(many=True)
 

@@ -8,7 +8,7 @@ class LoveLetterNew extends React.Component {
     data: {
       title: '',
       image: '',
-      content: ''
+      feeling: ''
     },
     errors: {}
   }
@@ -18,13 +18,13 @@ class LoveLetterNew extends React.Component {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
     const errors = { ...this.state.errors, [e.target.name]: '' }
     this.setState({ data, errors })
+    console.log(data)
   }
 
   handleSubmit = async (e) => {
     e.preventDefault()
-
     try {
-      const { data } = await axios.post('/loveletters', this.state.data, {
+      const { data } = await axios.post('/api/loveletters/', this.state.data, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.props.history.push(`/loveletters/${data.id}`)
@@ -34,6 +34,7 @@ class LoveLetterNew extends React.Component {
   }
 
   render() {
+
     return (
       <section className="section">
         <div className="container">
@@ -41,7 +42,9 @@ class LoveLetterNew extends React.Component {
             data={this.state.data}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
-            errors={this.state.errors}
+            handleMultiChange={this.handleChange}
+
+          // errors={this.state.errors}
           />
         </div>
       </section>

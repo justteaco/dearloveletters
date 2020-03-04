@@ -1,0 +1,90 @@
+[
+{
+  "model": "teablends.teablend",
+  "pk": 1,
+  "fields": {
+    "herb_name": "Lemon",
+    "herb_property": "Detox"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 2,
+  "fields": {
+    "herb_name": "Green Tea",
+    "herb_property": "Antioxidant"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 3,
+  "fields": {
+    "herb_name": "Peppermint",
+    "herb_property": "Relives discomfort"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 4,
+  "fields": {
+    "herb_name": "Ginger",
+    "herb_property": "Prevents Inflammation"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 5,
+  "fields": {
+    "herb_name": "Echinacace",
+    "herb_property": "Sooths Foggy Brain"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 6,
+  "fields": {
+    "herb_name": "Rooibos",
+    "herb_property": "Helps with Concentration"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 7,
+  "fields": {
+    "herb_name": "Sage",
+    "herb_property": "Helps with Memory"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 8,
+  "fields": {
+    "herb_name": "Lemon Balm",
+    "herb_property": "Skin Health"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 9,
+  "fields": {
+    "herb_name": "Rose Hip",
+    "herb_property": "Fights Aging"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 10,
+  "fields": {
+    "herb_name": "Passion Flower",
+    "herb_property": "Helps With Sleep"
+  }
+},
+{
+  "model": "teablends.teablend",
+  "pk": 11,
+  "fields": {
+    "herb_name": "Rose",
+    "herb_property": "Love"
+  }
+}
+]

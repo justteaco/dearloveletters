@@ -1,44 +1,32 @@
 import React from 'react'
 import axios from 'axios'
-import UserForm from './UserForm'
 import Auth from '../../lib/auth'
+import UserForm from './UserForm'
 //import Select from 'react-select'
 //import ImageUpload from '../ImageUpload'
 
 
 class UserEdit extends React.Component {
-  
   state = {
     data: {
-      name: '',
+      email: '',
       username: '',
+      first_name: '',
+      last_name: '',
+      password: '',
+      password_confirmation: '',
+      location_city: '',
       profile_image: '',
-      location: ''
+      about_me: ''
     },
     errors: {}
   }
 
-  options = [
-    { value: 'Happy', label: 'Happy' },
-    { value: 'Sad', label: 'Sad' },
-    { value: 'Angry', label: 'Angry' },
-    { value: 'Confused', label: 'Confused' },
-    { value: 'Beautiful', label: 'Beautiful' },
-    { value: 'Joyful', label: 'Joyful' },
-    { value: 'Present', label: 'Present' },
-    { value: 'Distracted', label: 'Distracted' },
-    { value: 'Embarassed', label: 'Embarassed' },
-    { value: 'Sexy', label: 'Sexy' },
-    { value: 'Distant', label: 'Distant' },
-    { value: 'Lonley', label: 'Lonley' },
-  
-  ]
 
   async componentDidMount() {
-    const UserId = this.props.match.params.id
-
+    const PenpalId = this.props.match.params.id
     try {
-      const res = await axios.get(`/api/penpals/${UserId}`, {
+      const res = await axios.get(`/api/penpals/${PenpalId}`, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.setState({ data: res.data })
@@ -47,23 +35,18 @@ class UserEdit extends React.Component {
     }
   }
 
-  // handleMultiChange = (selected) => {
-  //   const feelings = selected ? selected.map(item => item.value) : []
-  //   const data = { ...this.state.data, feelings, loveletter }
-  //   this.setState({ data })
-  // }
 
-  handleChange = ({ target: { name, value, profile_pic,  } }) => {
-    const data = { ...this.state.data, [name]: value, [profile_pic]: value }
+  handleChange = ({ target: { name, value, profile_image } }) => {
+    const data = { ...this.state.data, [name]: value, [profile_image]: value }
     this.setState({ data })
   }
 
   handleSubmit = async (e) => {
     e.preventDefault()
     console.log(this.props.match.params.id)
-    const userId = this.props.match.params.id
+    const penpalId = this.props.match.params.id
     try {
-      await axios.put(`/api/penpals/${userId}`, this.state.data, {
+      await axios.put(`/api/penpals/${penpalId}`, this.state.data, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.props.history.push('/profile')
@@ -94,8 +77,6 @@ class UserEdit extends React.Component {
         handleSubmit={this.handleSubmit}
         handleDelete={this.handleDelete}
         errors={this.state.errors}
-        options={this.options}
-        handleMultiChange={this.handleMultiChange}
       />
     )
   }

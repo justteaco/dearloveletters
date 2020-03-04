@@ -34,24 +34,40 @@ class Navbar extends React.Component {
       <nav className="navbar is-dark">
         <div className="container">
           <div className="navbar-brand">
-          <a href="/#" className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>love letters</a>
-          <a href="/#"className={`navbar-burger ${navbarOpen ? 'is-active' : ''}`} onClick={this.toggleNavbar}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
+            <a href="/#" className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>home</a>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div className={`navbar-menu ${navbarOpen ? 'is-active' : ''}`}>
             <div className="navbar-end">
-              <Link className="navbar-item" to="/loveletters">all letters</Link>
-              {Auth.isAuthenticated() && <Link className="navbar-item" to="/loveletters/new">add new love letter</Link>}
-              {!Auth.isAuthenticated() && <Link className="navbar-item" to="/register">Register</Link>}
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>love letters</a>
+                {
+                  navbarOpen &&
+                  <div className="navbar-dropdown">
+                    <Link className="navbar-item" to="/loveletters" onClick={this.handleClick}>all letters</Link>
+                    <Link className="navbar-item" to="/loveletters" onClick={this.handleClick}>my own</Link>
+                    {Auth.isAuthenticated() && <Link className="navbar-item" to="/loveletters/new">new love</Link>}
+                  </div>
+                }
+              </div>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>profile</a>
+                {
+                  navbarOpen &&
+                  <div className="navbar-dropdown">
+                    {Auth.isAuthenticated() && <Link className="navbar-item " to="/profile">about me</Link>}
+                    {Auth.isAuthenticated() && <Link className="navbar-item" to="/loveletters/response">reponses</Link>}
+                  </div>
+                }
+              </div>
               {!Auth.isAuthenticated() && <Link className="navbar-item" to="/login">Login</Link>}
               {Auth.isAuthenticated() && <a className="navbar-item" onClick={this.handleLogout}>Logout</a>}
             </div>
           </div>
         </div>
-      </nav>
+      </nav >
     )
   }
 }

@@ -22,7 +22,8 @@ urlpatterns = [
     path('api/loveletters/', include('loveletters.urls')),
     path('api/feelings/', include('feelings.urls')),
     path('api/teablends/', include('teablends.urls')),
-    path('api/', include('jwt_auth.urls'))
+    path('api/', include('jwt_auth.urls')),
+  
 
 
 ]

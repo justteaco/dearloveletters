@@ -10,7 +10,7 @@ class FeelingListView(APIView):
 
     def get(self, request):
         feelings = Feeling.objects.all() #gets all feelings
-        serialized_feeling = FeelingSerializer(feelings, many=True)
+        serialized_feeling = PopulatedFeelingSerializer(feelings, many=True)
         return Response(serialized_feeling.data)
 
 class FeelingDetailView(APIView):

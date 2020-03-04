@@ -5,23 +5,19 @@ import { Link } from 'react-router-dom'
 
 class UserProfile extends React.Component {
   state = {
-    user: {},
-    loveletters: [],
-    response: '',
-    location: ''
-
+    data: null
   }
 
   async getData() {
-    const currentpenpals = Auth.getUser()
+    const currentPenpal = Auth.getUser()
     try {
-      const res = await axios.get(`/api/penpals/${currentpenpals}`, {
+      const res = await axios.get(`/api/penpals/${currentPenpal}`, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
-      this.setState({ user: res.data, loveletters: res.data.loveletters })
-      this.responses(res)
+      console.log(res.data)
+      this.setState({ data: res.data })
     } catch (err) {
-      this.props.history.push('/notfound')
+      console.log(err)
     }
   }
 
@@ -34,18 +30,13 @@ class UserProfile extends React.Component {
     this.setState({ user })
   }
 
-  getResponses = (res) => {
-    const response = res.data.comments.length
-    this.setState({ response })
-  }
-
   handleDelete = async () => {
     const penpalId = this.props.match.params.id
     try {
       await axios.delete(`/api/penpals/${penpalId}`, {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
-      this.props.history.push('/penpals')
+      this.props.history.push('/penpal')
     } catch (err) {
       console.log(err.response)
     }
@@ -53,42 +44,33 @@ class UserProfile extends React.Component {
 
 
   render() {
-    const { name, location, profile_pic, _id, } = this.state.user
-    if (!this.state.user) return null
-    console.log(this.state.loveletters)
+    if (!this.state.data) return null
+    const { data } = this.state
+    console.log(data)
     return (
       <section className="user-section">
-        <div className="profilelayer">
-        </div>
         <div className="user-container">
           <div className="user-info fadeInLeft">
-            <h2 className="username">{name}</h2>
+            <h2 className="username">{data.username}</h2>
+            <br />
+            <figure className="image-container">
+              <img className="profile-image" src={data.profile_image} alt={data.username} />
+            </figure>
+            <h2 className="username">{data.location_city}</h2>
+            <br />
+            <h2 className="username">{data.first_name.last_name}</h2>
             <hr />
-
-            <Link to={`/penpals/${_id}/response`}>
-              <div className="allResponses">
-                <p>Read Response</p>
-              </div>
-              <br />
-              <hr />
-            </Link>
-            <p>{location}</p>
-
+            <p>{data.location_city}</p>
           </div>
           <div className="user-image">
-            <figure className="image-container">
-              <img className="penpals-image" src={profile_pic} alt={name} />
-            </figure>
             <br />
-            <Link to={`/penpals/${_id}/edit`} className="button is-rounded is-medium is-warning">
+            <br />
+            <p>{data.about_me}</p>
+            <br />
+            <Link to={`/penpals/${data.id}/edit`} className="button is-rounded is-medium is-warning">
               Edit Profile
             </Link>
-          </div>
-          <div className="love-letters fadeInRight">
-            <div className="profileLoveLetters">
-              <h2 className="title">Love Letters</h2>
-              {this.state.loveletters.map((loveletter, i) => <p key={i}>{loveletter}</p>)}
-            </div>
+            <br />
           </div>
         </div>
       </section>

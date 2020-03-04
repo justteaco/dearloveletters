@@ -20,8 +20,8 @@ class UserShow extends React.Component {
         headers: { Authorization: `Bearer ${Auth.getToken()}` }
       })
       this.setState({ user: res.data, loveletters: res.data.loveletters })
-      this.setState({ user: res.data, loveletters: res.data.loveletters })
-      this.countLikes(res)
+      // this.setState({ user: res.data, loveletters: res.data.loveletters })
+
     } catch (err) {
       this.props.history.push('/notfound')
     }
@@ -71,7 +71,7 @@ class UserShow extends React.Component {
     this.setState({ likesCount })
   }
 
-  submitResponse= (rev, res) => {
+  submitResponse = (rev, res) => {
     const response = rev.data.respnse.length
     const likesCount = res.data.like.length
     this.setState({ response, likesCount })
@@ -125,7 +125,7 @@ class UserShow extends React.Component {
                   <p>no love found</p>}
               </div>
               <Link to={`/penpals/${_id}/response`}>
-              <div className="allrepsonses">
+                <div className="allrepsonses">
                   <p>Read Response</p>
                 </div>
               </Link>

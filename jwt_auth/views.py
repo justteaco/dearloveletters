@@ -9,7 +9,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 import jwt
 
-from .serializers import UserSerializer, PartialUserSerializer
+from .serializers import UserSerializer, PartialUserSerializer, PopulatedUserSerializer
 User = get_user_model()
 
 class RegisterView(APIView):
@@ -50,10 +50,12 @@ class UserView(APIView):
     def get(self, _request, pk):
         try:
             user = User.objects.get(pk=pk)
-            serialized_user = UserSerializer(user)
+            serialized_user = PopulatedUserSerializer(user)
             return Response(serialized_user.data)
         except User.DoesNotExist:
             return Response({'message': 'Not Found'}, status=HTTP_404_NOT_FOUND)
+
+
     def put(self, request, pk):
         try:
             user = User.objects.get(pk=pk)
