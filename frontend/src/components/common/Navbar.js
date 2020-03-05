@@ -14,7 +14,7 @@ class Navbar extends React.Component {
   }
 
   handleClick = (e) => {
-    localStorage.setItem('feeling', e.target.innerHTML)
+    localStorage.setItem('loveletter', e.target.innerHTML)
   }
 
   handleLogout = () => {
@@ -31,10 +31,10 @@ class Navbar extends React.Component {
   render() {
     const { navbarOpen } = this.state
     return (
-      <nav className="navbar is-dark">
+      <nav className="navbar is-light">
         <div className="container">
           <div className="navbar-brand">
-            <a href="/#" className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>home</a>
+            <a href="/#" className="navbar-link has-text-grey is-arrowless" onClick={this.toggleNavBar}>home</a>
             <span></span>
             <span></span>
             <span></span>
@@ -42,23 +42,22 @@ class Navbar extends React.Component {
           <div className={`navbar-menu ${navbarOpen ? 'is-active' : ''}`}>
             <div className="navbar-end">
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>love letters</a>
+                <a className="navbar-link has-text-grey is-arrowless" onClick={this.toggleNavBar}>love letters</a>
                 {
                   navbarOpen &&
                   <div className="navbar-dropdown">
-                    <Link className="navbar-item" to="/loveletters" onClick={this.handleClick}>all letters</Link>
-                    <Link className="navbar-item" to="/loveletters" onClick={this.handleClick}>my own</Link>
+                    <Link className="navbar-item" to="/loveletters/" onClick={this.handleClick}>my own</Link>
                     {Auth.isAuthenticated() && <Link className="navbar-item" to="/loveletters/new">new love</Link>}
                   </div>
                 }
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link has-text-white is-arrowless" onClick={this.toggleNavBar}>profile</a>
+                <a className="navbar-link has-text-grey is-arrowless" onClick={this.toggleNavBar}>profile</a>
                 {
                   navbarOpen &&
                   <div className="navbar-dropdown">
                     {Auth.isAuthenticated() && <Link className="navbar-item " to="/profile">about me</Link>}
-                    {Auth.isAuthenticated() && <Link className="navbar-item" to="/loveletters/response">reponses</Link>}
+                    {Auth.isAuthenticated() && <Link className="navbar-item" to="/response">reponses</Link>}
                   </div>
                 }
               </div>

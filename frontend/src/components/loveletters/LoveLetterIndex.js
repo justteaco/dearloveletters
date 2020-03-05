@@ -42,14 +42,13 @@ class LoveLetterIndex extends React.Component {
     // console.log('feelings', this.state.feelings)
     return (
       <section className="section">
-        <div className="container">
+        <div className="hero-body-index">
           <div className="columns is-mobile is-multiline">
             <input
               onChange={this.handleChange}
               placeholder='Search for feelings'
             />
             {
-
               this.filterFeelings().map(feeling => {
                 console.log('emotion', feeling)
                 return feeling.loveletters.map(letter => {

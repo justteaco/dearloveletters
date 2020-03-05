@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Auth from '../../lib/auth'
+// import { Link } from 'react-router-dom'
 
 class Login extends React.Component {
   state = {
@@ -29,27 +30,28 @@ class Login extends React.Component {
 
   render() {
     return (
-      <section className="loginsection">
-        <div className="logincontainer">
+      <section className="login-section">
+        <div className="login-container">
           <div className="columns">
             <form onSubmit={this.handleSubmit} className="column is-half is-offset-one-quarter card">
-              <h2 className="title">Login</h2>
+              <h2 className="login-title">login</h2>
               <div className="field">
-                <label className="label">Email</label>
+                <label className="label">email</label>
                 <div className="control">
                   <input
-                    className={`input ${this.state.error} ? : 'is-danger' : '' `}
+                    className={`input is-rounded ${this.state.error} 
+                    ? : 'is-danger' : '' `}
                     name="email"
-                    placeholder="Email"
+                    placeholder="email"
                     onChange={this.handleChange}
                   />
                 </div>
               </div>
               <div className="field">
-                <label className="label">Password</label>
+                <label className="label">password</label>
                 <div className="control">
                   <input
-                    className={`input ${this.state.error} ? : 'is-danger' : '' `}
+                    className={`input is-rounded ${this.state.error} ? : 'is-danger' : '' `}
                     type="password"
                     name="password"
                     placeholder="Password"
@@ -58,7 +60,7 @@ class Login extends React.Component {
                 </div>
                 {this.state.error && <small className="help is-danger">{this.state.error}</small>}
               </div>
-              <button type="submit" className="button is-warning is-fullwidth">Login</button>
+              <button type="submit" className="button is-rounded"> login</button>
             </form>
           </div>
         </div>

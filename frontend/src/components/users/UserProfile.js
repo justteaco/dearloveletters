@@ -49,31 +49,33 @@ class UserProfile extends React.Component {
     console.log(data)
     return (
       <section className="user-section">
+        <br />
         <div className="user-container">
           <div className="user-info fadeInLeft">
             <h2 className="username">{data.username}</h2>
             <br />
             <figure className="image-container">
-              <img className="profile-image" src={data.profile_image} alt={data.username} />
+              <img className="image-profile" src={data.profile_image} alt={data.username} />
             </figure>
+            <h2 className="location-title">location:</h2>
             <h2 className="username">{data.location_city}</h2>
             <br />
             <h2 className="username">{data.first_name.last_name}</h2>
-            <hr />
-            <p>{data.location_city}</p>
+
           </div>
           <div className="user-image">
             <br />
             <br />
+            <h2> about me:</h2>
             <p>{data.about_me}</p>
             <br />
-            <Link to={`/penpals/${data.id}/edit`} className="button is-rounded is-medium is-warning">
+            <Link to={`/penpals/${data.id}/edit`} className="button is-rounded is-small is-light">
               Edit Profile
             </Link>
             <br />
           </div>
         </div>
-      </section>
+      </section >
     )
   }
 }

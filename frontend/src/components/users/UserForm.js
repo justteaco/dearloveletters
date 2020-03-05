@@ -131,7 +131,7 @@ const UserForm = ({ data, handleChange, handleDelete, handleSubmit, errors }) =>
 
         <button type="submit" className="button  is-rounded is-primary">save</button>
         <br />
-        <button onClick={handleDelete} className="button is-danger"> delete profile </button>
+        <button onClick={handleDelete} className="button is-rounded is-danger"> delete profile </button>
         {/* </div> */}
         <hr />
       </form>

@@ -16,7 +16,7 @@ const LoveLetterForm = ({ data, handleChange, handleSubmit }) => (
         </div>
       </div>
       <div className="field">
-        <label className="label">Image</label>
+        <label className="label">image</label>
         <div className="control">
           <input
             className='input'
@@ -28,7 +28,7 @@ const LoveLetterForm = ({ data, handleChange, handleSubmit }) => (
         </div>
       </div>
       <div className="field">
-        <label className="label">Love Letter</label>
+        <label className="label">love letter</label>
         <div className="control">
           <textarea
             className="textarea"
@@ -41,7 +41,7 @@ const LoveLetterForm = ({ data, handleChange, handleSubmit }) => (
       </div>
       <div className="field">
         <div className="control">
-          <button type="submit" className="button is-warning is-fullwidth">spread love</button>
+          <button type="submit" className="button is-rounded is-warning is-fullwidth">spread love</button>
         </div>
       </div>
     </form>
