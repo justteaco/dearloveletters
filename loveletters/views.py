@@ -10,16 +10,13 @@ from .serializers import LoveLetterSerializer, PopulatedLoveLettersSerializer, C
 class LoveLetterListView(APIView):
 
     def get(self, _request):
-        
         loveletters = LoveLetter.objects.all()
-        
         serialized_loveletters = PopulatedLoveLettersSerializer(loveletters, many=True)
         print(serialized_loveletters)
         return Response(serialized_loveletters.data, status=HTTP_200_OK)
 
     def post(self, request):
         loveletter = LoveLetterSerializer(data=request.data)
-
         if loveletter.is_valid():
             loveletter.save()
             return Response(loveletter.data, status=HTTP_201_CREATED)
@@ -28,10 +25,7 @@ class LoveLetterListView(APIView):
 
 
 class LoveLetterDetailView(APIView):
-
-
-    def get(self, _request, pk):
-
+    def get(self, request, pk):
         try:
             loveletter = LoveLetter.objects.get(pk=pk)
             serialized_loveletters = PopulatedLoveLettersSerializer(loveletter)
@@ -55,7 +49,7 @@ class LoveLetterDetailView(APIView):
         except LoveLetter.DoesNotExist:
             return  Response({'message': 'Not Found'}, status=HTTP_404_NOT_FOUND)
 
-    def delete(self, _request, pk):
+    def delete(self, request, pk):
 
         try:
             loveletter = LoveLetter.objects.get(pk=pk)

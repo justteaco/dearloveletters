@@ -46,6 +46,7 @@ class LoveLetterSerializer(serializers.ModelSerializer):
     fields = '__all__'
 
 class PopulatedUserSerializer(UserSerializer):
-    
+    comments = PopulatedCommentSerializer(many=True)
     loveletters_created = LoveLetterSerializer(many=True)
+    
 
