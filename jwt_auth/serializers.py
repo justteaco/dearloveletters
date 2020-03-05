@@ -5,6 +5,7 @@ from django.contrib.auth.hashers import make_password
 # import django.contrib.auth.password_validation as validations
 # from djnago.core.exceptions import ValidationError
 from loveletters.models import LoveLetter
+from loveletters.serializers import PopulatedCommentSerializer
 
 User = get_user_model()
 

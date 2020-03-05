@@ -2,6 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from feelings.models import Feeling
 from .models import LoveLetter, Comment, Like
+
 User = get_user_model()
 
 class UserSerializer(serializers.ModelSerializer):

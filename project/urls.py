@@ -15,6 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib import admin
+from django.urls import path, include
+from .views import index
+
+
+  
+  
+
 
 urlpatterns = [
     path('django-admin/', admin.site.urls),
@@ -23,6 +31,7 @@ urlpatterns = [
     path('api/feelings/', include('feelings.urls')),
     path('api/teablends/', include('teablends.urls')),
     path('api/', include('jwt_auth.urls')),
+    path('', index),
   
 
 
