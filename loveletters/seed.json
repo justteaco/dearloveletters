@@ -1,39 +1,96 @@
 [
 {
   "model": "loveletters.loveletter",
-  "pk": 1,
+  "pk": 17,
   "fields": {
-    "title": "Test",
-    "image": "https://images-na.ssl-images-amazon.com/images/I/513ZBn9L-JL._SX258_BO1,204,203,200_.jpg",
-    "love_letter": "love is blind and it'll take over your mind",
-    "published": "2020-03-03T11:05:36Z",
-    "recipient": 1,
-    "owner": 1,
-    "feelings": []
+    "title": "Rose From The Ashes",
+    "image": "https://66.media.tumblr.com/877690953370335541e9901048fc3dea/tumblr_mnvudglNoO1rxozk6o1_400.gifv",
+    "love_letter": "Hello beautiful being,  WOAH look at you. You are here. Doing it. Living it. Relishing in all that you knew yourself to be. You\u2019ve overcome so many of your own internal obstacles, got out of your own way, and rose from ashes of all the stories you collected from others in the past. Vibrant... that\u2019s you. Effortless present, purposefully driven, graciously growing \u2014 I see the light in you. Notice how your old highs are your new lows, your old worries you understand so clearly that they humor you. I mean...... this is it, this is life. And you are living it. You are a vision of abundance, a vessel of love, pure trust of self, eternal compassion for others. I am in awe of you.  Thank you for existing, thank you being, thank you for YOU.  Love you infinitely Heart suit",
+    "published": "2020-03-03T23:02:14Z",
+    "owner": 20,
+    "feelings": [
+      2
+    ]
   }
 },
 {
   "model": "loveletters.loveletter",
-  "pk": 2,
+  "pk": 18,
+  "fields": {
+    "title": "Hey Love",
+    "image": "https://media1.tenor.com/images/c904e9c9a15a1611500fc8cf40743c75/tenor.gif?itemid=4948697",
+    "love_letter": "I'm so happy i put some time aside to write you. I feel like it's been forever since I've updated you on things. It's almost a whole March out here, we made it praise God. So much has been happening and the truth is, I'm tired. BUT it's what I prayed for and God been working. Remember the Vision Board Party i wanted to do for HNOW? Freaked it. Im really happy about that, thank you for your encouraging words. Now i'm just trying to work on managing my time. The nerve of me to think I'd be able to \"lay low\" before the summer. Chile, this city dead never sleeps but praise God for opportunity and ability. ANYWAYS what about YOU? I'm so excited to hear about how 2020 has been for you. I know you're out there killing it! You have to update me on that thing* (wink, wink). I miss you, but cest la",
+    "published": "2020-03-03T23:03:37Z",
+    "owner": 23,
+    "feelings": [
+      8
+    ]
+  }
+},
+{
+  "model": "loveletters.loveletter",
+  "pk": 19,
+  "fields": {
+    "title": "I Found A Friend In My Ex's Girlfriend",
+    "image": "https://media2.giphy.com/media/l4FGnPMWYC3JWhFWo/giphy.gif",
+    "love_letter": "It's crazy how life works. Who would have thought I'd be friends with my ex boyfriends girlfriend. She's super dope and I'm happy we put aside our differeneces",
+    "published": "2020-03-03T23:04:50Z",
+    "owner": 22,
+    "feelings": [
+      2
+    ]
+  }
+},
+{
+  "model": "loveletters.loveletter",
+  "pk": 20,
+  "fields": {
+    "title": "I'm Stuck In America",
+    "image": "https://media.giphy.com/media/wPQJeg7FCW2s/giphy.gif",
+    "love_letter": "I've been stuck in america because I overstayed my time in South Africa and I'm super pissed because the Corana Virus just got to New York. Ugh. I miss my boyfriend and fresh air",
+    "published": "2020-03-03T23:11:12Z",
+    "owner": 21,
+    "feelings": [
+      3
+    ]
+  }
+},
+{
+  "model": "loveletters.loveletter",
+  "pk": 21,
+  "fields": {
+    "title": "I didn't give up",
+    "image": "https://lh3.googleusercontent.com/proxy/6Kame0_yol675aoTyCDqVs6PoInv89AMAU6LDVlLqQmf9sGms3He1J_t5cT6yZTXADk-mqjRUBCwiYQ4pz41QJV6F6KfJmjH2a38Vfyuq1oXKg2MkprJrFlst-rrCXEeERUEYw",
+    "love_letter": "I spent the last 12 weeks learning something new and getting into code and honeslty it's been the hardest thing i could have ever done for myself. Super happy, but also a little sad because I didn't give it my ALL. One because I'm super insecure but also I had a series of unfornutnate events that's happened to me. But you know what I'm happy I did it.",
+    "published": "2020-03-03T23:13:10Z",
+    "owner": 24,
+    "feelings": [
+      5
+    ]
+  }
+},
+{
+  "model": "loveletters.loveletter",
+  "pk": 22,
+  "fields": {
+    "title": "Love",
+    "image": "https://media0.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif",
+    "love_letter": "love",
+    "published": "2020-03-03T23:19:23Z",
+    "owner": 16,
+    "feelings": [
+      4
+    ]
+  }
+},
+{
+  "model": "loveletters.loveletter",
+  "pk": 23,
   "fields": {
     "title": "I've been having a shit day",
     "image": "https://pbs.twimg.com/profile_images/785547911878717441/r8AyE_Kh_400x400.jpg",
     "love_letter": "i went behinds my girls back and now im sad",
     "published": "2020-02-27T16:00:10.929Z",
-    "recipient": null,
-    "owner": null,
-    "feelings": []
-  }
-},
-{
-  "model": "loveletters.loveletter",
-  "pk": 3,
-  "fields": {
-    "title": "I've been having a shit day",
-    "image": "https://pbs.twimg.com/profile_images/785547911878717441/r8AyE_Kh_400x400.jpg",
-    "love_letter": "i went behinds my girls back and now im sad",
-    "published": "2020-02-27T16:00:10.929Z",
-    "recipient": null,
     "owner": null,
     "feelings": [
       1
@@ -42,31 +99,124 @@
 },
 {
   "model": "loveletters.loveletter",
-  "pk": 4,
+  "pk": 24,
   "fields": {
-    "title": "My Love overflows, my heart is full",
-    "image": "https://media2.giphy.com/media/czevJlexlxAyc/giphy.gif",
-    "love_letter": "'m so happy i put some time aside to write you. I feel like it's been forever since I've updated you on things. It's almost a whole March out here, we made it praise God. So much has been happening and the truth is, I'm tired. BUT it's what I prayed for and God been working. Remember the Vision Board Party i wanted to do for HNOW? Freaked it. Im really happy about that, thank you for your encouraging words. Now i'm just trying to work on managing my time. The nerve of me to think I'd be able to \"lay low\" before the summer. Chile, this city dead never sleeps but praise God for opportunity and ability. ANYWAYS what about YOU? I'm so excited to hear about how 2020 has been for you. I know you're out there killing it! You have to update me on that thing* (wink, wink). I miss you, but cest la v",
-    "published": "2020-03-03T11:51:53Z",
-    "recipient": 1,
-    "owner": 2,
+    "title": "i love my life",
+    "image": "https://pbs.twimg.com/profile_images/785547911878717441/r8AyE_Kh_400x400.jpg",
+    "love_letter": "i went behinds my girls back and now im sad",
+    "published": "2020-02-27T16:00:10.929Z",
+    "owner": null,
     "feelings": [
-      2,
-      4
+      1
     ]
   }
 },
 {
-  "model": "loveletters.loveletter",
+  "model": "loveletters.comment",
+  "pk": 1,
+  "fields": {
+    "text": "Hey Girl, It's going to be okay. With divine timing all things will come to you. Just stay strong",
+    "loveletter": 21,
+    "owner": 26
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 2,
+  "fields": {
+    "text": "Hey Love,  I'm super duper proud of you and all of what you done. CONGRATSSSS",
+    "loveletter": 17,
+    "owner": 25
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 3,
+  "fields": {
+    "text": "BITCHHHH you're friends with your ex's girlfriend? that sounds a bit NUTS but you know what I'm here for growth and not letting a guy get in between two dope ass women WOOOHHAAAAAA. so what are you guys like besties now?",
+    "loveletter": 19,
+    "owner": 27
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 4,
+  "fields": {
+    "text": "hello hello hey hello hello, you are amazing",
+    "loveletter": 18,
+    "owner": 27
+  }
+},
+{
+  "model": "loveletters.comment",
   "pk": 5,
   "fields": {
-    "title": "Money Flows",
-    "image": "https://media2.giphy.com/media/JpG2A9P3dPHXaTYrwu/giphy.gif",
-    "love_letter": "I've been having so much trouble keeping a job and finally have one that I enjoy and",
-    "published": "2020-03-03T11:54:54Z",
-    "recipient": 1,
-    "owner": 1,
-    "feelings": []
+    "text": "some text",
+    "loveletter": 19,
+    "owner": 29
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 6,
+  "fields": {
+    "text": "some text",
+    "loveletter": 19,
+    "owner": 29
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 7,
+  "fields": {
+    "text": "kgujghjgcjvcjvcj",
+    "loveletter": 19,
+    "owner": null
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 8,
+  "fields": {
+    "text": "khjggjkghggjkgcjkgcjkgcjkgcjkilgkcfj",
+    "loveletter": 19,
+    "owner": null
+  }
+},
+{
+  "model": "loveletters.comment",
+  "pk": 9,
+  "fields": {
+    "text": "GIRL",
+    "loveletter": 22,
+    "owner": 27
+  }
+},
+{
+  "model": "loveletters.like",
+  "pk": 1,
+  "fields": {
+    "like": 2,
+    "loveletter": 17,
+    "owner": 21
+  }
+},
+{
+  "model": "loveletters.like",
+  "pk": 2,
+  "fields": {
+    "like": 1,
+    "loveletter": 20,
+    "owner": 28
+  }
+},
+{
+  "model": "loveletters.like",
+  "pk": 3,
+  "fields": {
+    "like": 1,
+    "loveletter": 18,
+    "owner": 21
   }
 }
 ]
