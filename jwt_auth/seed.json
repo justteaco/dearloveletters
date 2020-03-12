@@ -1,0 +1,233 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 16,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$WiVWdKewBUyf$bPTVMOgXl4J/7Bykjauh61C3Z9X4cmkjy5wzWl8l1J4=",
+    "last_login": "2020-03-03T20:48:50Z",
+    "is_superuser": true,
+    "username": "@yourfavoritecup",
+    "first_name": "Tahirah",
+    "last_name": "Jarrett",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-03-03T19:23:56Z",
+    "email": "love@email.com",
+    "profile_image": "https://cdn.shopify.com/s/files/1/0974/7680/files/Screen_Shot_2019-04-07_at_1.27.13_PM_large.png?v=1554732440",
+    "location_city": "london",
+    "about_me": "my name is tahirah and i'm so proud that i'm here. i made it to 12 weeks and i'm looking forward to getting better at coding and making beautiful apps.",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 20,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@alexeyadotcom",
+    "first_name": "Alexa",
+    "last_name": "Brown",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:42:44Z",
+    "email": "alexa@email.com",
+    "profile_image": "https://images.squarespace-cdn.com/content/v1/56130952e4b0b5bea6491f56/1581986315531-4HSBPKV5KSF684PDA4H8/ke17ZwdGBToddI8pDm48kHem505q6McQd8XRhQc9zkRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxpEURhgSBEh9ILe0HKIG3CcOCklsxWwam3CdWF6Xw7jwVv5P97BEtB5XaVnmvMtTA/image-asset.jpeg",
+    "location_city": "Brooklyn",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 21,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@kelseydashmarie",
+    "first_name": "Kelsey",
+    "last_name": "Marie",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:44:00Z",
+    "email": "kelsey@email.com",
+    "profile_image": "https://i.pinimg.com/originals/1c/3b/ab/1c3babdf34f28dfc2b97ea3345c19729.jpg",
+    "location_city": "Johannesburg",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 22,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@LeArielleSimone",
+    "first_name": "Arielle",
+    "last_name": "Simone",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:45:48Z",
+    "email": "arielle@email.com",
+    "profile_image": "https://pbs.twimg.com/profile_images/1195875064593485824/FkO490BO_400x400.jpg",
+    "location_city": "Brooklyn",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 23,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@itsevejf",
+    "first_name": "Eve",
+    "last_name": "Fam",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:46:59Z",
+    "email": "eve@email.com",
+    "profile_image": "https://images.squarespace-cdn.com/content/v1/563d9578e4b05857c22031b0/1574338767396-A5447TCNJDMU9K5HLEBB/ke17ZwdGBToddI8pDm48kPw2Bw6TxA-fzY_ilNZUlEF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UUGs5m0yzYJaL1W3ByhXwmBZ3i69iCJbURiFvHj57JsS-S_Xn7lfm2hB3ixPNj5miw/IMG_7050.jpeg",
+    "location_city": "Cape Town",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 24,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@tahirahasha",
+    "first_name": "Tahirah",
+    "last_name": "Jarrett",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:48:08Z",
+    "email": "tahirah@email.com",
+    "profile_image": "https://pbs.twimg.com/media/DKWv2dsVwAALJK9.jpg",
+    "location_city": "London",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 25,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@itscovl",
+    "first_name": "Dana",
+    "last_name": "Covl",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:49:21Z",
+    "email": "dana@email.com",
+    "profile_image": "https://pbs.twimg.com/media/DnKHJzEVYAExg6l.jpg",
+    "location_city": "San Juan",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 26,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@AbigailForeman1",
+    "first_name": "Abigal",
+    "last_name": "Foreman",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:51:34Z",
+    "email": "abigal@email.com",
+    "profile_image": "https://pbs.twimg.com/profile_images/1209226898003378187/6NstjMiG_400x400.jpg",
+    "location_city": "Cairo",
+    "about_me": "2020-03-03 23:36:41.462816+00:00",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 27,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@flarer222",
+    "first_name": "Claire",
+    "last_name": "Roberston",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:57:50Z",
+    "email": "claire@email.com",
+    "profile_image": "https://pbs.twimg.com/profile_images/1230443809957269504/DSLj3TXC_400x400.jpg",
+    "location_city": "Barcelona",
+    "about_me": "the coolest girl on campus",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 28,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "@georgeanthony33",
+    "first_name": "George",
+    "last_name": "Anthony",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-03T22:58:51Z",
+    "email": "george@email.com",
+    "profile_image": "https://pbs.twimg.com/profile_images/472478522511224832/eHaC1apa_400x400.jpeg",
+    "location_city": "Manchester",
+    "about_me": "i'm cool calm and collective.",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 29,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$tSnPgqEjlEtO$XPvOqqP0LVlzdOjvnsHyonH8k5XaCs42AZdhJc/oboU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "pat",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-04T11:38:48.256Z",
+    "email": "pat@email.com",
+    "profile_image": "blank",
+    "location_city": "london",
+    "about_me": "i love cheese",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
