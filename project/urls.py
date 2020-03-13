@@ -25,7 +25,7 @@ from .views import index
 
 urlpatterns = [
     path('django-admin/', admin.site.urls),
-    path('admin/', include('rest_framework.urls')),
+    path('/admin/', include('rest_framework.urls')),
     path('api/loveletters/', include('loveletters.urls')),
     path('api/feelings/', include('feelings.urls')),
     path('api/teablends/', include('teablends.urls')),
