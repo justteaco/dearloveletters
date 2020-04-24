@@ -32,22 +32,23 @@ class LoveLetterIndex extends React.Component {
     return this.state.feelings.filter(item => regexp.test(item.emotion))
   }
 
-  // filterLetters = () => {
-  //   console.log(this.state.loveLetters)
-  //   const regexp = new RegExp(this.state.searchResult, 'i')
-  //   return this.state.loveLetters.filter(item => regexp.test(item.feelings.map(feeling => feeling.emotion)))
-  // }
+  filterLetters = () => {
+    console.log(this.state.loveLetters)
+    const regexp = new RegExp(this.state.searchResult, 'i')
+    return this.state.loveLetters.filter(item => regexp.test(item.feelings.map(feeling => feeling.emotion)))
+  }
   render() {
     if (!this.state.feelings) return null
     // console.log('feelings', this.state.feelings)
     return (
       <section className="section">
         <div className="hero-body-index">
+          <input
+            onChange={this.handleChange}
+            placeholder='Search for feelings'
+          />
           <div className="columns is-mobile is-multiline">
-            <input
-              onChange={this.handleChange}
-              placeholder='Search for feelings'
-            />
+
             {
               this.filterFeelings().map(feeling => {
                 console.log('emotion', feeling)

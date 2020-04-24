@@ -32,15 +32,16 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <SecureRoute path="/loveletters/:id" component={LoveLetterEdit} />
-        <SecureRoute path="/penpals/:id/edit" component={UserEdit} />
-        <SecureRoute path="/penpals/:id/review" component={UserResponse} />
-        <SecureRoute path="/loveletters/:id" component={LoveLetterShow} />
+        <SecureRoute path="/profile" component={UserProfile} />
         <SecureRoute path="/loveletters/new" component={LoveLetterNew} />
+        <SecureRoute path="/loveletters/:id" component={LoveLetterShow} />
+        <SecureRoute path="/loveletters/:id" component={LoveLetterEdit} />
         <Route path="/loveletters" component={LoveLetterIndex} />
+        <SecureRoute path="/penpals/:id/edit" component={UserEdit} />
+        <SecureRoute path="/penpals/:id/response" component={UserResponse} />
+
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
-        <SecureRoute path="/profile" component={UserProfile} />
         <Route path="/*" component={FailedPage} />
       </Switch>
     </BrowserRouter>

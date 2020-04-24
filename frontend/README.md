@@ -1,68 +1,93 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Dear Love Letters
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Dear Love Letters is a virtual pen pal app connecting people through feelings and healing. Open Letters for people to read anonymously, then connect with if they want to keep in touch. A space to share emotions and tips on how to heal the body, mind, and soul. 
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack 
 
-### `yarn build`
+Built with:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* Python
+* Django 
+* Create React
+* JavaScript 
+* Bulma 
+* SCSS 
+* Express 
+* PostgreSQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Release History
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* I will be spending my time updating this app. I want to show the challenges that I came across building it in the timeframe given and to also show what I've accomplished outside the classroom. I also really love the concept and think it's very needed in these times. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Deployment
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This game is deployed via Heroku and can be found here - [Dear Love Letters](https://dear-love-letters.herokuapp.com/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+# How To Start 
 
-### Analyzing the Bundle Size
+You can fork and clone this app! Once forked/cloned to your repository, open the index.html file in the browser and the app loads. Feel free to replace images and customise to your liking. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+# Built Game 
+This app was created with multiple SQL relationships models between the penpal, feelings, and herbs that linked to the feeling. My focus was more so on the front-end so I used Bulma and Sass to make the app look aesthetically pleasing.
 
-### Making a Progressive Web App
+<img src="https://bit.ly/2V82AXf" width="400" height="250">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+The user would start at the home page and type in an emotion they are feeling. It will then generate all the letters that with that evoked emotion for the user to pick from. The object of the app is to connect like minded individuals from anywhere in the world.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+<img src="https://bit.ly/2JLGPXZ" width="400" height="250">
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+To naivagate the app you must register first. It is a member based app due to the privacy of the memebers. Once you have registered with your name, location, and email, then the user can start writing feeling based letters.
 
-### `yarn build` fails to minify
+<img src="https://bit.ly/3bVV6NZ" width="400" height="250">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Approach 
+## Planning 
+
+* My projects as you can see are very influenced by my every day life. When the instructor informed us about project four, I had a few ideas up my sleeve prior, but this one was the most unique. I thought it was a nice way for me to prove my skills and show my progression in using realtionships of models.
+
+I spent t
+
+
+# Challenges and Improvements
+## Challenges:
+
+
+* My biggest challange was making sure the yogi gained speed once it catched it's dream. I used event listeners to maniplaute the arrow keys, which then controls the movement of the yogi. It got tricky when I had to make sure the yogi not reverese into its self. 
+<img src="https://i.ibb.co/44wF1Mm/project1.png" width="400" height="250">
+
+* Making sure the head of the yogi was detacted on collision.
+I overcame this challange by slicing the yogi's array. Then I was able to detect the square which containted the other index's of the array when the yogi head was in the same grid square. 
+<img src="https://i.ibb.co/44wF1Mm/project1.png" width="400" height="250">
+
+
+<img src="https://i.ibb.co/44wF1Mm/project1.png" width="400" height="250">
+
+
+
+
+# Improvements 
+
+I plan to advance and improve this game by:
+
+* Fix the broken image that generates the amount of dreams catched. 
+* Making the grid bigger. 
+* Apply a countdown and highest scrore. 
+* Making the game mobile responsive.
+
+
+

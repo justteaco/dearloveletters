@@ -88,13 +88,12 @@ class LoveLetterShow extends React.Component {
       <section className="loveletter-section">
         <div className="container">
           <h2 className="title">{loveletter.title}</h2>
-          {/* <hr /> */}
           <p>{loveletter.location}</p>
-          <h2 className="username">{loveletter.username}</h2> */}
+          <h2 className="username">{loveletter.username}</h2>
           <div className="columns">
             <div className="column is-half">
-              <figure className="image is-square">
-                <img src={loveletter.image} alt={loveletter.title} />
+              <figure className="image is-round">
+                {/* <img src={loveletter.image} alt={loveletter.title} /> */}
               </figure>
             </div>
             <div className="column is-half">
@@ -103,13 +102,6 @@ class LoveLetterShow extends React.Component {
               <hr />
               <h4 className="title is-4">how i feel:</h4>
               <p>{loveletter.feelings}</p>
-
-
-              <Link to={`/loveletters/${loveletter.id}/response`}>
-                <div className="allReponses">
-                  <p> you've got mail!  </p>
-                </div>
-              </Link>
             </div>
           </div>
           <div className="rating">
