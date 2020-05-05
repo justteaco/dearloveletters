@@ -58,36 +58,30 @@ To naivagate the app you must register first. It is a member based app due to th
 # Approach 
 ## Planning 
 
-* My projects as you can see are very influenced by my every day life. When the instructor informed us about project four, I had a few ideas up my sleeve prior, but this one was the most unique. I thought it was a nice way for me to prove my skills and show my progression in using realtionships of models.
+* My projects as you can see are very influenced by my every day life. When the instructor informed us about project four, I had a few ideas up my sleeve prior, but this one was the most unique. I thought it was a nice way for me to prove my skills and show my progression in using realtionships of models. It took me two days to plan and one day to wireframe my ideas into pages. 
 
-I spent t
+
 
 
 # Challenges and Improvements
 ## Challenges:
 
 
-* My biggest challange was making sure the yogi gained speed once it catched it's dream. I used event listeners to maniplaute the arrow keys, which then controls the movement of the yogi. It got tricky when I had to make sure the yogi not reverese into its self. 
-<img src="https://i.ibb.co/44wF1Mm/project1.png" width="400" height="250">
+* My biggest challange was making sure my app was functional. Getting the many to many realtionships  make sense took about four days. The way I wire-framed.
 
-* Making sure the head of the yogi was detacted on collision.
-I overcame this challange by slicing the yogi's array. Then I was able to detect the square which containted the other index's of the array when the yogi head was in the same grid square. 
-<img src="https://i.ibb.co/44wF1Mm/project1.png" width="400" height="250">
+<img src="https://i.ibb.co/Gd5pJTv/Screenshot-2020-05-05-at-10-41-31.png" width="400" height="250">
+
+<img src="https://i.ibb.co/rvd04fr/Screenshot-2020-05-05-at-11-08-18.png" width="400" height="250">
 
 
-<img src="https://i.ibb.co/44wF1Mm/project1.png" width="400" height="250">
 
 
 
 
 # Improvements 
 
-I plan to advance and improve this game by:
+I plan to advance and improve this app. 
 
-* Fix the broken image that generates the amount of dreams catched. 
-* Making the grid bigger. 
-* Apply a countdown and highest scrore. 
-* Making the game mobile responsive.
 
 
 
