@@ -80,7 +80,13 @@ To navigate the app you must register first. It is a members based app due to th
 
 # Improvements 
 
-I plan to advance and improve this app. 
+I plan to advance and improve this app. By adding a map to it for the user can locate other memebers and penapals from across the world. I want to add a mailbox so the member can find their letters seamlessly. I want to add a pop quiz that helps the member with their feelings and finding herbs to match. 
+
+# Key Learning 
+
+* Sass 
+* Python 
+* MongoDB
 
 
 
