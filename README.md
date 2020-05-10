@@ -51,14 +51,14 @@ The user would start at the home page and type in an emotion they are feeling. I
 <img src="https://bit.ly/2JLGPXZ" width="400" height="250">
 
 
-To naivagate the app you must register first. It is a member based app due to the privacy of the memebers. Once you have registered with your name, location, and email, then the user can start writing feeling based letters.
+To navigate the app you must register first. It is a members based app due to the privacy of the members. Once you have registered with your name, location, and email, then the user can start writing feeling based letters.
 
 <img src="https://bit.ly/3bVV6NZ" width="400" height="250">
 
 # Approach 
 ## Planning 
 
-* My projects as you can see are very influenced by my every day life. When the instructor informed us about project four, I had a few ideas up my sleeve prior, but this one was the most unique. I thought it was a nice way for me to prove my skills and show my progression in using realtionships of models. It took me two days to plan and one day to wireframe my ideas into pages. 
+* My projects as you can see are very influenced by my every day life. When the instructor informed us about project four, I had a few ideas up my sleeve prior, but this one was the most unique. I thought it was a nice way for me to prove my skills and show my progression in using relationships of models. It took me two days to plan and one day to wireframe my ideas into pages. 
 
 
 
